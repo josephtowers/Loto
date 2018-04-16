@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>¡Bienvenido!</title>
+  <link rel="stylesheet" href="css/uikit.min.css" />
+  <script>if (typeof module === 'object') { window.module = module; module = undefined; }</script>
+
+  <!-- normal script imports etc  -->
+  <script src="jquery.min.js"></script>
+  <script src="uikit.min.js"></script>
+  <script src="uikit-icons.min.js"></script>
+
+  <!-- Insert this line after script imports -->
+  <script>if (window.module) module = window.module;</script>
+</head>
+
+<body>
+  <style>
+    .column {
+      background-color: lightgray;
+      padding: 5px;
+      align-items: center !important
+    }
+    span {
+      position: absolute;
+      margin-top: 5px;
+      background-color: #222 !important;
+      margin-left: 5px;
+    }
+    .uk-grid-collapse > div {
+      text-align: left
+    }
+  </style>
+  <div class="uk-container-expand" style="text-align: center; background-color: #222; padding: 15px">
+      <div class="uk-child-width-expand@s uk-text-center" uk-grid>
+          <div></div>
+          <div><h1 class="uk-heading-primary" style="color: white; margin: 0">Sistema de loto</h1></div>
+          <div style="text-align: right !important"><button class="uk-button uk-button-secondary" onclick="gtfo()">
+              Salir
+            </button></div>
+      </div>
+      
+  </div>
+  <div class="uk-grid-collapse uk-child-width-expand@s uk-text-center" uk-grid>
+    <div>
+        <span class="uk-badge">1</span>
+      <div class="uk-background-muted uk-padding">
+        <div class="uk-child-width-expand@s uk-text-center" uk-grid>
+          <div>
+            <input maxlength="2" class="uk-input" maxlength="2" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+              type="number" pattern="\d*" name="first-name" id="011">
+          </div>
+          <div>
+            <input maxlength="2" class="uk-input" maxlength="2" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+              type="number" pattern="\d*" name="first-name" id="012">
+          </div>
+          <div>
+            <input maxlength="2" class="uk-input" maxlength="2" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+              type="number" pattern="\d*" name="first-name" id="013">
+          </div>
+          <div>
+            <button class="uk-button uk-button-secondary" onclick="keepTrying('01')">
+              Enviar
+            </button>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+    <div>
+        <span class="uk-badge">2</span>
+      <div class="uk-background-primary uk-padding">
+        <div class="uk-child-width-expand@s uk-text-center" uk-grid>
+          <div>
+            <input maxlength="2" class="uk-input" maxlength="2" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+              type="number" pattern="\d*" name="first-name" id="021">
+          </div>
+          <div>
+            <input maxlength="2" class="uk-input" maxlength="2" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+              type="number" pattern="\d*" name="first-name" id="022">
+          </div>
+          <div>
+            <input maxlength="2" class="uk-input" maxlength="2" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+              type="number" pattern="\d*" name="first-name" id="023">
+          </div>
+          <div>
+            <button class="uk-button uk-button-secondary" onclick="keepTrying('02')">
+              Enviar
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="uk-grid-collapse uk-child-width-expand@s uk-text-center" uk-grid>
+    <div>
+        <span class="uk-badge">3</span>
+      <div class="uk-background-muted uk-padding">
+        <div class="uk-child-width-expand@s uk-text-center" uk-grid>
+          <div>
+            <input maxlength="2" class="uk-input" maxlength="2" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+              type="number" pattern="\d*" name="first-name" id="031">
+          </div>
+          <div>
+            <input maxlength="2" class="uk-input" maxlength="2" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+              type="number" pattern="\d*" name="first-name" id="032">
+          </div>
+          <div>
+            <input maxlength="2" class="uk-input" maxlength="2" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+              type="number" pattern="\d*" name="first-name" id="033">
+          </div>
+          <div>
+            <button class="uk-button uk-button-secondary" onclick="keepTrying('03')">
+              Enviar
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div>
+        <span class="uk-badge">4</span>
+      <div class="uk-background-primary uk-padding">
+        <div class="uk-child-width-expand@s uk-text-center" uk-grid>
+          <div>
+            <input maxlength="2" class="uk-input" maxlength="2" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+              type="number" pattern="\d*" name="first-name" id="041">
+          </div>
+          <div>
+            <input maxlength="2" class="uk-input" maxlength="2" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+              type="number" pattern="\d*" name="first-name" id="042">
+          </div>
+          <div>
+            <input maxlength="2" class="uk-input" maxlength="2" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+              type="number" pattern="\d*" name="first-name" id="043">
+          </div>
+          <div>
+            <button class="uk-button uk-button-secondary" onclick="keepTrying('04')">
+              Enviar
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="uk-grid-collapse uk-child-width-expand@s uk-text-center" uk-grid>
+    <div>
+        <span class="uk-badge">5</span>
+      <div class="uk-background-muted uk-padding">
+        <div class="uk-child-width-expand@s uk-text-center" uk-grid>
+          <div>
+            <input maxlength="2" class="uk-input" maxlength="2" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+              type="number" pattern="\d*" name="first-name" id="051">
+          </div>
+          <div>
+            <input maxlength="2" class="uk-input" maxlength="2" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+              type="number" pattern="\d*" name="first-name" id="052">
+          </div>
+          <div>
+            <input maxlength="2" class="uk-input" maxlength="2" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+              type="number" pattern="\d*" name="first-name" id="053">
+          </div>
+          <div>
+            <button class="uk-button uk-button-secondary" onclick="getResult(5)">
+              Enviar
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div>
+        <span class="uk-badge">6</span>
+      <div class="uk-background-primary uk-padding">
+        <div class="uk-child-width-expand@s uk-text-center" uk-grid>
+          <div>
+            <input maxlength="2" class="uk-input" maxlength="2" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+              type="number" pattern="\d*" name="first-name" id="061">
+          </div>
+          <div>
+            <input maxlength="2" class="uk-input" maxlength="2" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+              type="number" pattern="\d*" name="first-name" id="062">
+          </div>
+          <div>
+            <input maxlength="2" class="uk-input" maxlength="2" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+              type="number" pattern="\d*" name="first-name" id="063">
+          </div>
+          <div>
+            <button class="uk-button uk-button-secondary" onclick="keepTrying('06')">
+              Enviar
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="uk-grid-collapse uk-child-width-expand@s uk-text-center" uk-grid>
+    <div>
+        <span class="uk-badge">7</span>
+      <div class="uk-background-muted uk-padding">
+        <div class="uk-child-width-expand@s uk-text-center" uk-grid>
+          <div>
+            <input maxlength="2" class="uk-input" maxlength="2" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+              type="number" pattern="\d*" name="first-name" id="071">
+          </div>
+          <div>
+            <input maxlength="2" class="uk-input" maxlength="2" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+              type="number" pattern="\d*" name="first-name" id="072">
+          </div>
+          <div>
+            <input maxlength="2" class="uk-input" maxlength="2" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+              type="number" pattern="\d*" name="first-name" id="073">
+          </div>
+          <div>
+            <button class="uk-button uk-button-secondary" onclick="keepTrying('07')">
+              Enviar
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div>
+        <span class="uk-badge">8</span>
+      <div class="uk-background-primary uk-padding">
+        <div class="uk-child-width-expand@s uk-text-center" uk-grid>
+          <div>
+            <input maxlength="2" class="uk-input" maxlength="2" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+              type="number" pattern="\d*" name="first-name" id="081">
+          </div>
+          <div>
+            <input maxlength="2" class="uk-input" maxlength="2" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+              type="number" pattern="\d*" name="first-name" id="082">
+          </div>
+          <div>
+            <input maxlength="2" class="uk-input" maxlength="2" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+              type="number" pattern="\d*" name="first-name" id="083">
+          </div>
+          <div>
+            <button class="uk-button uk-button-secondary" onclick="keepTrying('08')">
+              Enviar
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="uk-grid-collapse uk-child-width-expand@s uk-text-center" uk-grid>
+    <div>
+        <span class="uk-badge">9</span>
+      <div class="uk-background-muted uk-padding">
+        <div class="uk-child-width-expand@s uk-text-center" uk-grid>
+          <div>
+            <input maxlength="2" class="uk-input" maxlength="2" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+              type="number" pattern="\d*" name="first-name" id="091">
+          </div>
+          <div>
+            <input maxlength="2" class="uk-input" maxlength="2" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+              type="number" pattern="\d*" name="first-name" id="092">
+          </div>
+          <div>
+            <input maxlength="2" class="uk-input" maxlength="2" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+              type="number" pattern="\d*" name="first-name" id="093">
+          </div>
+          <div>
+            <button class="uk-button uk-button-secondary" onclick="keepTrying('09')">
+              Enviar
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div>
+        <span class="uk-badge">10</span>
+      <div class="uk-background-primary uk-padding">
+        <div class="uk-child-width-expand@s uk-text-center" uk-grid>
+          <div>
+            <input maxlength="2" class="uk-input" maxlength="2" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+              type="number" pattern="\d*" name="first-name" id="101">
+          </div>
+          <div>
+            <input maxlength="2" class="uk-input" maxlength="2" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+              type="number" pattern="\d*" name="first-name" id="102">
+          </div>
+          <div>
+            <input maxlength="2" class="uk-input" maxlength="2" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+              type="number" pattern="\d*" name="first-name" id="103">
+          </div>
+          <div>
+            <button class="uk-button uk-button-secondary" onclick="keepTrying('10')">
+              Enviar
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="uk-grid-collapse uk-child-width-expand@s uk-text-center" uk-grid>
+    <div>
+        <span class="uk-badge">11</span>
+      <div class="uk-background-muted uk-padding">
+        <div class="uk-child-width-expand@s uk-text-center" uk-grid>
+          <div>
+            <input maxlength="2" class="uk-input" maxlength="2" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+              type="number" pattern="\d*" name="first-name" id="111">
+          </div>
+          <div>
+            <input maxlength="2" class="uk-input" maxlength="2" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+              type="number" pattern="\d*" name="first-name" id="112">
+          </div>
+          <div>
+            <input maxlength="2" class="uk-input" maxlength="2" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+              type="number" pattern="\d*" name="first-name" id="113">
+          </div>
+          <div>
+            <button class="uk-button uk-button-secondary" onclick="getResult(11)">
+              Enviar
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div>
+        <span class="uk-badge">12</span>
+      <div class="uk-background-primary uk-padding">
+        <div class="uk-child-width-expand@s uk-text-center" uk-grid>
+          <div>
+            <input maxlength="2" class="uk-input" maxlength="2" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+              type="number" pattern="\d*" name="first-name" id="0">
+          </div>
+          <div>
+            <input maxlength="2" class="uk-input" maxlength="2" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+              type="number" pattern="\d*" name="first-name" id="0">
+          </div>
+          <div>
+            <input maxlength="2" class="uk-input" maxlength="2" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+              type="number" pattern="\d*" name="first-name" id="0">
+          </div>
+          <div>
+            <button class="uk-button uk-button-secondary" onclick="keepTrying('12')">
+              Enviar
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="uk-grid-collapse uk-child-width-expand@s uk-text-center" uk-grid>
+    <div>
+        <span class="uk-badge">13</span>
+      <div class="uk-background-muted uk-padding">
+        <div class="uk-child-width-expand@s uk-text-center" uk-grid>
+          <div>
+            <input maxlength="2" class="uk-input" maxlength="2" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+              type="number" pattern="\d*" name="first-name" id="0">
+          </div>
+          <div>
+            <input maxlength="2" class="uk-input" maxlength="2" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+              type="number" pattern="\d*" name="first-name" id="0">
+          </div>
+          <div>
+            <input maxlength="2" class="uk-input" maxlength="2" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+              type="number" pattern="\d*" name="first-name" id="0">
+          </div>
+          <div>
+            <button class="uk-button uk-button-secondary" onclick="keepTrying('13')">
+              Enviar
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div>
+        <span class="uk-badge">14</span>
+      <div class="uk-background-primary uk-padding">
+        <div class="uk-child-width-expand@s uk-text-center" uk-grid>
+          <div>
+            <input maxlength="2" class="uk-input" maxlength="2" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+              type="number" pattern="\d*" name="first-name" id="0">
+          </div>
+          <div>
+            <input maxlength="2" class="uk-input" maxlength="2" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+              type="number" pattern="\d*" name="first-name" id="0">
+          </div>
+          <div>
+            <input maxlength="2" class="uk-input" maxlength="2" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+              type="number" pattern="\d*" name="first-name" id="0">
+          </div>
+          <div>
+            <button class="uk-button uk-button-secondary" onclick="keepTrying('14')">
+              Enviar
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="uk-grid-collapse uk-child-width-expand@s uk-text-center" uk-grid>
+    <div>
+        <span class="uk-badge">15</span>
+      <div class="uk-background-muted uk-padding">
+        <div class="uk-child-width-expand@s uk-text-center" uk-grid>
+          <div>
+            <input maxlength="2" class="uk-input" maxlength="2" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+              type="number" pattern="\d*" name="first-name" id="0">
+          </div>
+          <div>
+            <input maxlength="2" class="uk-input" maxlength="2" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+              type="number" pattern="\d*" name="first-name" id="0">
+          </div>
+          <div>
+            <input maxlength="2" class="uk-input" maxlength="2" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+              type="number" pattern="\d*" name="first-name" id="0">
+          </div>
+          <div>
+            <button class="uk-button uk-button-secondary" onclick="keepTrying('15')">
+              Enviar
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div>
+        <span class="uk-badge">16</span>
+      <div class="uk-background-primary uk-padding">
+        <div class="uk-child-width-expand@s uk-text-center" uk-grid>
+          <div>
+            <input maxlength="2" class="uk-input" maxlength="2" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+              type="number" pattern="\d*" name="first-name" id="0">
+          </div>
+          <div>
+            <input maxlength="2" class="uk-input" maxlength="2" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+              type="number" pattern="\d*" name="first-name" id="0">
+          </div>
+          <div>
+            <input maxlength="2" class="uk-input" maxlength="2" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+              type="number" pattern="\d*" name="first-name" id="0">
+          </div>
+          <div>
+            <button class="uk-button uk-button-secondary" onclick="keepTrying('16')">
+              Enviar
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="uk-grid-collapse uk-child-width-expand@s uk-text-center" uk-grid>
+    <div>
+        <span class="uk-badge">17</span>
+      <div class="uk-background-muted uk-padding">
+        <div class="uk-child-width-expand@s uk-text-center" uk-grid>
+          <div>
+            <input maxlength="2" class="uk-input" maxlength="2" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+              type="number" pattern="\d*" name="first-name" id="0">
+          </div>
+          <div>
+            <input maxlength="2" class="uk-input" maxlength="2" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+              type="number" pattern="\d*" name="first-name" id="0">
+          </div>
+          <div>
+            <input maxlength="2" class="uk-input" maxlength="2" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+              type="number" pattern="\d*" name="first-name" id="0">
+          </div>
+          <div>
+            <button class="uk-button uk-button-secondary" onclick="keepTrying('17')">
+              Enviar
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div>
+        <span class="uk-badge">18</span>
+      <div class="uk-background-primary uk-padding">
+        <div class="uk-child-width-expand@s uk-text-center" uk-grid>
+          <div>
+            <input maxlength="2" class="uk-input" maxlength="2" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+              type="number" pattern="\d*" name="first-name" id="0">
+          </div>
+          <div>
+            <input maxlength="2" class="uk-input" maxlength="2" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+              type="number" pattern="\d*" name="first-name" id="0">
+          </div>
+          <div>
+            <input maxlength="2" class="uk-input" maxlength="2" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+              type="number" pattern="\d*" name="first-name" id="0">
+          </div>
+          <div>
+            <button class="uk-button uk-button-secondary" onclick="keepTrying('18')">
+              Enviar
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="uk-grid-collapse uk-child-width-expand@s uk-text-center" uk-grid>
+    <div>
+        <span class="uk-badge">19</span>
+      <div class="uk-background-muted uk-padding">
+        <div class="uk-child-width-expand@s uk-text-center" uk-grid>
+          <div>
+            <input maxlength="2" class="uk-input" maxlength="2" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+              type="number" pattern="\d*" name="first-name" id="0">
+          </div>
+          <div>
+            <input maxlength="2" class="uk-input" maxlength="2" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+              type="number" pattern="\d*" name="first-name" id="0">
+          </div>
+          <div>
+            <input maxlength="2" class="uk-input" maxlength="2" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+              type="number" pattern="\d*" name="first-name" id="0">
+          </div>
+          <div>
+            <button class="uk-button uk-button-secondary" onclick="keepTrying('19')">
+              Enviar
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div>
+        <span class="uk-badge">20</span>
+      <div class="uk-background-primary uk-padding">
+        <div class="uk-child-width-expand@s uk-text-center" uk-grid>
+          <div>
+            <input maxlength="2" class="uk-input" maxlength="2" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+              type="number" pattern="\d*" name="first-name" id="201">
+          </div>
+          <div>
+            <input maxlength="2" class="uk-input" maxlength="2" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+              type="number" pattern="\d*" name="first-name" id="202">
+          </div>
+          <div>
+            <input maxlength="2" class="uk-input" maxlength="2" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+              type="number" pattern="\d*" name="first-name" id="203">
+          </div>
+          <div>
+            <button class="uk-button uk-button-secondary" onclick="getResult(20)">
+              Enviar
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <script>
+    let winners = []
+    function keepTrying(str) {
+      if (jQuery("#" + str + "1").val() == '' || jQuery("#" + str + "2").val() == '' || jQuery("#" + str + "3").val() == '') {
+        alert("Debe introducir todos los números")
+      } else {
+        alert("Sigue participando...")
+      }
+    }
+    function getResult(int) {
+      let flag = true
+      let tmp = []
+      switch (int) {
+        case 5:
+          if (jQuery("#051").val() == '' || jQuery("#052").val() == '' || jQuery("#053").val() == '') {
+            alert("Debe introducir todos los números")
+          } else {
+            tmp = []
+            tmp.push(jQuery("#051").val())
+            tmp.push(jQuery("#052").val())
+            tmp.push(jQuery("#053").val())
+            tmp.sort((a, b) => a - b)
+            flag = true
+            for (let wins of winners) {
+              if (JSON.stringify(wins) == JSON.stringify(tmp)) {
+                alert("Esta combinación ya ha sido ganadora")
+                flag = false
+                break
+              }
+            }
+            if (flag) {
+              winners.push(tmp)
+              alert("Usted ganó")
+            }
+          }
+          break;
+        case 11:
+          if (jQuery("#111").val() == '' || jQuery("112").val() == '' || jQuery("#113").val() == '') {
+            alert("Debe introducir todos los números")
+          } else {
+            tmp = []
+            tmp.push(jQuery("#111").val())
+            tmp.push(jQuery("#112").val())
+            tmp.push(jQuery("#113").val())
+            tmp.sort((a, b) => a - b)
+            flag = true
+            for (let wins of winners) {
+              if (JSON.stringify(wins) == JSON.stringify(tmp)) {
+                alert("Esta combinación ya ha sido ganadora")
+                flag = false
+                break
+              }
+            }
+            if (flag) {
+              winners.push(tmp)
+              alert("Usted ganó")
+            }
+          }
+          break;
+        case 20:
+          if (jQuery("#201").val() == '' || jQuery("#202").val() == '' || jQuery("#203").val() == '') {
+            alert("Debe introducir todos los números")
+          } else {
+            tmp = []
+            tmp.push(jQuery("#201").val())
+            tmp.push(jQuery("#202").val())
+            tmp.push(jQuery("#203").val())
+            tmp.sort((a, b) => a - b)
+            flag = true
+            for (let wins of winners) {
+              if (JSON.stringify(wins) == JSON.stringify(tmp)) {
+                alert("Esta combinación ya ha sido ganadora")
+                flag = false
+                break
+              }
+            }
+            if (flag) {
+              winners.push(tmp)
+              alert("Usted ganó")
+            }
+          }
+          break;
+      }
+      console.log(winners)
+    }
+    function gtfo() {
+      const remote = require('electron').remote;
+
+        var window = remote.getCurrentWindow();
+        window.close();
+    }
+    require('./renderer.js')
+  </script>
+</body>
+
+</html>

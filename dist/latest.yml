@@ -1,0 +1,9 @@
+version: 1.0.0
+files:
+  - url: loto-setup-1.0.0.exe
+    sha512: n5iNE1WAc67U8LkU2gNHDi6Qxif97JeukE75syb9ifxX/S6IZBKOuktWNrG11N9oP4JCxFRd35jTkAS2ge1cUA==
+    size: 38386797
+path: loto-setup-1.0.0.exe
+sha512: n5iNE1WAc67U8LkU2gNHDi6Qxif97JeukE75syb9ifxX/S6IZBKOuktWNrG11N9oP4JCxFRd35jTkAS2ge1cUA==
+sha2: cdc325214f6433c0d3edf52160aa909bded24b948983157ac254936eaf7a215d
+releaseDate: '2018-04-16T03:13:21.520Z'
